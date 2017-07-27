@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="x_141595_arik_objednavky" label="AriK Task objednavek" max_length="40" name="x_141595_arik_arik_task_objednavek" type="collection"/>
+</database>

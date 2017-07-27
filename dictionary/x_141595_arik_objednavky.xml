@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true,hasLabels=true" audit="true" extends="sys_metadata" label="objednavky" max_length="40" name="x_141595_arik_objednavky" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Approved state" max_length="40" name="u_boolean_1" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="typ dortu" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element label="jiny" sequence="0" value="jiny"/>
+                <element label="nepečený" sequence="0" value="1"/>
+                <element label="pečený" sequence="0" value="2"/>
+                <element label="jiný" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="stav" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="nová obejdnávka" sequence="0" value="1"/>
+                <element label="ropzracováno" sequence="1" value="2"/>
+                <element label="hotovo" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="New Currency" max_length="20" name="u_currency_2" type="currency"/>
+        <element label="na kdy" max_length="40" name="u_due_date_4" type="due_date"/>
+        <element label="Na kdy" max_length="40" name="u_glide_date_6" type="glide_date"/>
+        <element label="New Date/Time" max_length="40" name="u_glide_date_time_3" type="glide_date_time"/>
+        <element choice="1" label="stav" max_length="40" name="u_integer_2" type="integer">
+            <choice/>
+        </element>
+        <element default="nová objednávka" label="New Integer" max_length="40" name="u_integer_3" type="integer"/>
+        <element label="New Journal" max_length="4000" name="u_journal_1" type="journal"/>
+        <element label="přiděleno" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_choice_1" dependent_on_field="u_choice_1" label="barva dortu" max_length="40" name="u_string_3" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="1" label="bílý" sequence="0" value="Choice 1"/>
+                <element dependent_value="2" label="černý" sequence="1" value="Choice 2"/>
+                <element dependent_value="3" label="černobílý" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="poznámky" max_length="4000" name="u_string_5" type="string"/>
+        <index name="index">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index2">
+            <element name="u_due_date_4"/>
+        </index>
+        <index name="index3">
+            <element name="u_glide_date_6"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>u_glide_date_6</col_name_string>
+        <index_col_name element="u_glide_date_6" name="x_141595_arik_objednavky">31207d0ddb8003004c645990cf9619e4</index_col_name>
+        <logical_table_name>x_141595_arik_objednavky</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-19 08:33:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d5e64baddb0003004c645990cf9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_141595_arik_objednavky</sys_name>
+        <sys_package display_value="AriK" source="x_141595_arik">3843e541db0003004c645990cf96194d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AriK">3843e541db0003004c645990cf96194d</sys_scope>
+        <sys_update_name>sys_index_x_141595_arik_objednavky_u_glide_date_6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-19 08:33:42</sys_updated_on>
+        <table display_value="objednavky" name="x_141595_arik_objednavky">eb29e549db8003004c645990cf96191b</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

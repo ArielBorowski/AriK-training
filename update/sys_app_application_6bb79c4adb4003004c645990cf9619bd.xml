@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>AriK Task objednavek</name>
+        <order>100</order>
+        <roles>x_141595_arik.arik_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-20 09:05:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6bb79c4adb4003004c645990cf9619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AriK Task objednavek</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AriK" source="x_141595_arik">3843e541db0003004c645990cf96194d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AriK">3843e541db0003004c645990cf96194d</sys_scope>
+        <sys_update_name>sys_app_application_6bb79c4adb4003004c645990cf9619bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-20 09:05:25</sys_updated_on>
+        <title>AriK Task objednavek</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

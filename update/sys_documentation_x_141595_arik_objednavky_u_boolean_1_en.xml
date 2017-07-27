@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_boolean_1" label="Approved state" language="en" table="x_141595_arik_objednavky">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_boolean_1</element>
+            <help/>
+            <hint/>
+            <label>Approved state</label>
+            <language>en</language>
+            <name>x_141595_arik_objednavky</name>
+            <plural>Approved states</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-07-25 08:25:48</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>c8ae7d67db4003004c645990cf961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Approved state</sys_name>
+            <sys_package display_value="AriK" source="x_141595_arik">3843e541db0003004c645990cf96194d</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AriK">3843e541db0003004c645990cf96194d</sys_scope>
+            <sys_update_name>sys_documentation_x_141595_arik_objednavky_u_boolean_1_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-07-25 08:25:48</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

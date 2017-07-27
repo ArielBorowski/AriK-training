@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Send email when objednavka change state to hotovo - not finalyzed yet</description>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <messages>Objednávka je hotová</messages>
+        <name>sent email when done</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   /*var checkSubmit = new GlideRecord('x_141595_arik_objednavky');
+	checkSubmit.query('u_choice_4','===',hotovo);*/
+	var GetEmailAddress = Class.create();
+// Extend the global.AbstractAjaxProcessor class
+GetEmailAddress.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
+	// Define the getEmail function.  
+	// Create a GlideRecord for the User table.
+	// Use the sysparm_userID passed from the client side to retrieve a record from the User table.
+	// Return the email address for the requested record
+	getEmail: function() {
+		var userRecord = new GlideRecord("sys_user");
+		userRecord.get(this.getParameter('sysparm_userID'));
+		return userRecord.email + '';
+	},
+	type: 'GetEmailAddress'});
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-18 11:15:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e54e9e11dbc803004c645990cf96197a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>sent email when done</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AriK" source="x_141595_arik">3843e541db0003004c645990cf96194d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AriK">3843e541db0003004c645990cf96194d</sys_scope>
+        <sys_update_name>sys_script_client_e54e9e11dbc803004c645990cf96197a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-19 10:02:12</sys_updated_on>
+        <table>x_141595_arik_objednavky</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
